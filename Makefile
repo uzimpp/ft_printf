@@ -1,5 +1,4 @@
 NAME			= libftprintf.a
-NAME_LIBFT		= libft.a
 
 
 SRCS_DIR		= ./srcs/
