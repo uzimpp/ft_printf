@@ -6,37 +6,25 @@
 /*   By: wkullana <wkullana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:16:10 by wkullana          #+#    #+#             */
-/*   Updated: 2024/10/01 01:09:45 by wkullana         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:00:35 by wkullana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_putlptr(unsigned long ptr)
 {
 	int	len;
 
 	len = 0;
+	if (!ptr)
+		return (ft_putlstr("(nil)"));
 	len += ft_putlstr("0x");
 	len += ft_putptr(ptr);
 	if (len < 0)
 		return (-1);
 	return (len);
 }
-
-// int	ft_putlptr(unsigned long ptr)
-// {
-// 	int	len;
-
-// 	if (!ptr)
-// 		return (ft_putlstr("(nil)"));
-// 	len = 0;
-// 	len += ft_putlstr("0x");
-// 	len += ft_putptr(ptr);
-// 	if (len < 0)
-// 		return (-1);
-// 	return (len);
-// }
 
 int	ft_putptr(unsigned long nbr)
 {

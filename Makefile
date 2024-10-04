@@ -5,23 +5,19 @@ SRCS_DIR		= ./srcs/
 HEAD_DIR		= ./includes/
 
 
-# rwildcard 		= $(shell find $(1) -type f -name '$(2)')
-# SRCS			= $(call rwildcard,$(SRCS_DIR),*.c)
-# OBJS			= $(SRCS:.c=.o)
-
-SRC             = ft_printf \
-					ft_putlchar \
-					ft_putlnbr \
-					ft_putlnbrbase \
-					ft_putlptr \
-					ft_putlstr
-SRCS			= $(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC)))
+SRC             = ft_printf.c \
+					ft_putlchar.c \
+					ft_putlnbr.c \
+					ft_putlstr.c \
+					ft_putlnbrbase.c \
+					ft_putlptr.c
+SRCS			= $(addprefix $(SRCS_DIR), $(SRC))
 OBJS			= $(SRCS:.c=.o)
 
 
 CC				= cc
 RM				= rm -f
-AR				= ar -rsc
+AR				= ar -rcs
 
 FLAGS			= -Wall -Wextra -Werror
 

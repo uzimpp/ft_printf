@@ -6,11 +6,11 @@
 /*   By: wkullana <wkullana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 10:28:36 by wkullana          #+#    #+#             */
-/*   Updated: 2024/10/01 01:08:21 by wkullana         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:53:23 by wkullana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_option(char c, va_list *ap)
 {

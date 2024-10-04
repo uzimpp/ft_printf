@@ -6,7 +6,7 @@
 /*   By: wkullana <wkullana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 12:37:15 by wkullana          #+#    #+#             */
-/*   Updated: 2024/10/01 01:07:27 by wkullana         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:55:31 by wkullana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,10 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
 
+int	ft_printf(const char *s, ...);
 int	ft_option(char c, va_list *ap);
 int	ft_format(const char *s, va_list *ap);
-int	ft_printf(const char *s, ...);
 int	ft_putlptr(unsigned long ptr);
 int	ft_putptr(unsigned long nbr);
 int	ft_putlchar(char c);
