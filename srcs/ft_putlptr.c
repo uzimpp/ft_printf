@@ -6,7 +6,7 @@
 /*   By: wkullana <wkullana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:16:10 by wkullana          #+#    #+#             */
-/*   Updated: 2024/10/09 19:54:46 by wkullana         ###   ########.fr       */
+/*   Updated: 2024/10/13 13:25:38 by wkullana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_putlptr(unsigned long ptr)
 		return (ft_putlstr("(nil)"));
 	len += ft_putlstr("0x");
 	len += ft_putptr(ptr);
-	if (len < 0)
-		return (-1);
 	return (len);
 }
 
@@ -38,7 +36,5 @@ int	ft_putptr(unsigned long nbr)
 	}
 	else
 		len += ft_putlchar("0123456789abcdef"[nbr]);
-	if (len < 0)
-		return (-1);
 	return (len);
 }
